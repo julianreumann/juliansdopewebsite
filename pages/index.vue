@@ -16,8 +16,13 @@
           <img id="flower" src="~/assets/folower.jpg" alt="flower">
         </div>
       </div>
+      <div class="row">
+        <div class="col-md">
+          <button v-on:click="clickme">click mich zwei mal</button>
+        </div>
+      </div>
     </div>
-  </div>
+  </div> 
 </template>
 
 <script>
@@ -26,6 +31,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  methods: {
+    clickme: function(event) {
+      alert("hallo welt")
+    }
   }
 }
 </script>
